@@ -1,0 +1,829 @@
+red=0
+org=0
+ylw=0
+grn=0
+blu=0
+ppl=0
+
+#saving
+import json
+
+def save(name:str, save:dict):
+    with open(name, "w") as file:
+        saving = json.dumps(save)
+        file.write(str(saving))
+
+def load(name:str):
+    with open(name, "r") as file:
+        return json.loads(file.read())
+
+#country troop counter
+if True:
+    KamchatkaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    YakutskTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    SiberiaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    UralTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    IrkutskTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    MongoliaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    ChinaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    SoutheastAsiaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    JapanTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    IndiaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    MiddleEastTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    AfghanistanTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    #Europe
+    RussiaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    ScandanaviaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    NorthernEuropeTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    SouthernEuropeTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    WesternEuropeTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    IcelandTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    GreatBritainTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    #Africa
+    NorthAfricaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    EgyptTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    EastAfricaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    CentralAfricaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    SouthAfricaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    #Oceania
+    IndonesiaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    NewGuineaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    WesternAustraliaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    EasternAustraliaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    #South America
+    BrazilTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    VenezuelaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    PeruTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    ArgentinaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    #North America
+    CentralAmericaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    EasternUnitedStatesTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    WesternUnitedStatesTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    EasternCanadaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    OntarioTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    AlbertaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    NorthwestTerritoryTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    AlaskaTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+    GreenlandTrps={
+        red:0,
+        org:0,
+        ylw:0,
+        grn:0,
+        blu:0,
+        ppl:0
+    }
+
+
+
+#country occupation table
+if True:
+    #initialise troop counts
+    KamchatkaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    YakutskKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    SiberiaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    UralKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    IrkutskKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    MongoliaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    ChinaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    SoutheastAsiaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    JapanKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    IndiaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    MiddleEastKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    AfghanistanKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    #Europe
+    RussiaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    ScandanaviaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    NorthernEuropeKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    SouthernEuropeKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    WesternEuropeKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    IcelandKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    GreatBritainKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    #Africa
+    NorthAfricaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    EgyptKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    EastAfricaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    CentralAfricaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    SouthAfricaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    #Oceania
+    IndonesiaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    NewGuineaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    WesternAustraliaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    EasternAustraliaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    #South America
+    BrazilKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    VenezuelaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    PeruKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    ArgentinaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    #North America
+    CentralAmericaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    EasternUnitedStatesKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    WesternUnitedStatesKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    EasternCanadaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    OntarioKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    AlbertaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    NorthwestTerritoryKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    AlaskaKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+    GreenlandKing={
+        red:False,
+        org:False,
+        ylw:False,
+        grn:False,
+        blu:False,
+        ppl:False
+    }
+
+#country border table
+if True:
+    #initialise troop counts
+    KamchatkaBrdr=[
+    
+]
+    YakutskBrdr=[
+    
+]
+    SiberiaBrdr=[
+    
+]
+    UralBrdr=[
+    
+]
+    IrkutskBrdr=[
+    
+]
+    MongoliaBrdr=[
+    
+]
+    ChinaBrdr=[
+    
+]
+    SoutheastAsiaBrdr=[
+    
+]
+    JapanBrdr=[
+    
+]
+    IndiaBrdr=[
+    
+]
+    MiddleEastBrdr=[
+    
+]
+    AfghanistanBrdr=[
+    
+]
+    #Europe
+    RussiaBrdr=[
+    
+]
+    ScandanaviaBrdr=[
+    
+]
+    NorthernEuropeBrdr=[
+    
+]
+    SouthernEuropeBrdr=[
+    
+]
+    WesternEuropeBrdr=[
+    
+]
+    IcelandBrdr=[
+    
+]
+    GreatBritainBrdr=[
+    
+]
+    #Africa
+    NorthAfricaBrdr=[
+    
+]
+    EgyptBrdr=[
+    
+]
+    EastAfricaBrdr=[
+    
+]
+    CentralAfricaBrdr=[
+    
+]
+    SouthAfricaBrdr=[
+    
+]
+    #Oceania
+    IndonesiaBrdr=[
+    
+]
+    NewGuineaBrdr=[
+    
+]
+    WesternAustraliaBrdr=[
+    
+]
+    EasternAustraliaBrdr=[
+    
+]
+    #South America
+    BrazilBrdr=[
+    
+]
+    VenezuelaBrdr=[
+    
+]
+    PeruBrdr=[
+    
+]
+    ArgentinaBrdr=[
+    
+]
+    #North America
+    CentralAmericaBrdr=[
+    
+]
+    EasternUnitedStatesBrdr=[
+    
+]
+    WesternUnitedStatesBrdr=[
+    
+]
+    EasternCanadaBrdr=[
+    
+]
+    OntarioBrdr=[
+    
+]
+    AlbertaBrdr=[
+    
+]
+    NorthwestTerritoryBrdr=[
+    
+]
+    AlaskaBrdr=[
+    
+]
+    GreenlandBrdr=[
+    
+]
+
+[
+    
+]
