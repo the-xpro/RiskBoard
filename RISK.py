@@ -1,11 +1,11 @@
+import pygame
+
 red=0
 org=0
 ylw=0
 grn=0
 blu=0
 ppl=0
-
-# this is a change
 
 #saving
 import json
