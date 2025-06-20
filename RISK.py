@@ -19,64 +19,215 @@ def load(name:str):
     with open(name, "r") as file:
         return json.loads(file.read())
 
+# classes
+class Kamchatka:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Alaska,
+            Yakutsk,
+            Irkutsk,
+            Japan,
+            Mongolia
+        ]
+
+class Yakutsk:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Kamchatka,
+            Irkutsk,
+            Siberia
+        ]
+
+class Siberia:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Yakutsk,
+            Irkutsk,
+            Mongolia,
+            China,
+            Ural
+        ]
+
+class Ural:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Siberia,
+            China,
+            Afghanistan,
+            Russia
+        ]
+
+class Irkutsk:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Kamchatka,
+            Mongolia,
+            Yakutsk,
+            Siberia
+        ]
+
+class Mongolia:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Kamchatka,
+            Japan,
+            China,
+            Siberia,
+            Irkutsk
+        ]
+
+class China:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Afghanistan,
+            India,
+            Siam,
+            Mongolia,
+            Siberia,
+            Ural
+        ]
+
+class China:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Afghanistan,
+            India,
+            Siam,
+            Mongolia,
+            Siberia,
+            Ural
+        ]
+
 #country troop counter
 if True:
-    KamchatkaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    YakutskTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    SiberiaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    UralTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    IrkutskTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    MongoliaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    ChinaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
     SoutheastAsiaTrps={
         red:0,
         org:0,
@@ -354,478 +505,3 @@ if True:
         blu:0,
         ppl:0
     }
-
-
-
-#country occupation table
-if True:
-    #initialise troop counts
-    KamchatkaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    YakutskKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    SiberiaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    UralKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    IrkutskKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    MongoliaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    ChinaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    SoutheastAsiaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    JapanKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    IndiaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    MiddleEastKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    AfghanistanKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    #Europe
-    RussiaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    ScandanaviaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    NorthernEuropeKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    SouthernEuropeKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    WesternEuropeKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    IcelandKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    GreatBritainKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    #Africa
-    NorthAfricaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    EgyptKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    EastAfricaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    CentralAfricaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    SouthAfricaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    #Oceania
-    IndonesiaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    NewGuineaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    WesternAustraliaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    EasternAustraliaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    #South America
-    BrazilKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    VenezuelaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    PeruKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    ArgentinaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    #North America
-    CentralAmericaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    EasternUnitedStatesKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    WesternUnitedStatesKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    EasternCanadaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    OntarioKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    AlbertaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    NorthwestTerritoryKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    AlaskaKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-    GreenlandKing={
-        red:False,
-        org:False,
-        ylw:False,
-        grn:False,
-        blu:False,
-        ppl:False
-    }
-
-#country border table
-if True:
-    #initialise troop counts
-    KamchatkaBrdr=[
-    
-]
-    YakutskBrdr=[
-    
-]
-    SiberiaBrdr=[
-    
-]
-    UralBrdr=[
-    
-]
-    IrkutskBrdr=[
-    
-]
-    MongoliaBrdr=[
-    
-]
-    ChinaBrdr=[
-    
-]
-    SoutheastAsiaBrdr=[
-    
-]
-    JapanBrdr=[
-    
-]
-    IndiaBrdr=[
-    
-]
-    MiddleEastBrdr=[
-    
-]
-    AfghanistanBrdr=[
-    
-]
-    #Europe
-    RussiaBrdr=[
-    
-]
-    ScandanaviaBrdr=[
-    
-]
-    NorthernEuropeBrdr=[
-    
-]
-    SouthernEuropeBrdr=[
-    
-]
-    WesternEuropeBrdr=[
-    
-]
-    IcelandBrdr=[
-    
-]
-    GreatBritainBrdr=[
-    
-]
-    #Africa
-    NorthAfricaBrdr=[
-    
-]
-    EgyptBrdr=[
-    
-]
-    EastAfricaBrdr=[
-    
-]
-    CentralAfricaBrdr=[
-    
-]
-    SouthAfricaBrdr=[
-    
-]
-    #Oceania
-    IndonesiaBrdr=[
-    
-]
-    NewGuineaBrdr=[
-    
-]
-    WesternAustraliaBrdr=[
-    
-]
-    EasternAustraliaBrdr=[
-    
-]
-    #South America
-    BrazilBrdr=[
-    
-]
-    VenezuelaBrdr=[
-    
-]
-    PeruBrdr=[
-    
-]
-    ArgentinaBrdr=[
-    
-]
-    #North America
-    CentralAmericaBrdr=[
-    
-]
-    EasternUnitedStatesBrdr=[
-    
-]
-    WesternUnitedStatesBrdr=[
-    
-]
-    EasternCanadaBrdr=[
-    
-]
-    OntarioBrdr=[
-    
-]
-    AlbertaBrdr=[
-    
-]
-    NorthwestTerritoryBrdr=[
-    
-]
-    AlaskaBrdr=[
-    
-]
-    GreenlandBrdr=[
-    
-]
-
-[
-    
-]
