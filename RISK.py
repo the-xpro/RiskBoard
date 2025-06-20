@@ -429,9 +429,110 @@ class NorthernEurope:
             Russia
         ]
 
+class SouthernEurope:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Egypt,
+            NorthAfrica,
+            MiddleEast,
+            Russia,
+            NorthernEurope,
+            WesternEurope
+        ]
+
+class WesternEurope:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            GreatBritain,
+            NorthernEurope,
+            SouthernEurope,
+            NorthAfrica
+        ]
+
+class Iceland:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            GreatBritain,
+            Scandanavia,
+            Greenland
+        ]
+
+class GreatBritain:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Iceland,
+            Scandanavia,
+            NorthernEurope,
+            WesternEurope
+        ]
+
 #country troop counter
 if True:
-    NorthernEuropeTrps={
+    NorthAfrica={
         red:0,
         org:0,
         ylw:0,
@@ -439,7 +540,7 @@ if True:
         blu:0,
         ppl:0
     }
-    SouthernEuropeTrps={
+    Egypt={
         red:0,
         org:0,
         ylw:0,
@@ -447,7 +548,7 @@ if True:
         blu:0,
         ppl:0
     }
-    WesternEuropeTrps={
+    EastAfrica={
         red:0,
         org:0,
         ylw:0,
@@ -455,7 +556,7 @@ if True:
         blu:0,
         ppl:0
     }
-    IcelandTrps={
+    CentralAfrica={
         red:0,
         org:0,
         ylw:0,
@@ -463,48 +564,7 @@ if True:
         blu:0,
         ppl:0
     }
-    GreatBritainTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    #Africa
-    NorthAfricaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EgyptTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EastAfricaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    CentralAfricaTrps={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    SouthAfricaTrps={
+    SouthAfrica={
         red:0,
         org:0,
         ylw:0,
@@ -513,7 +573,7 @@ if True:
         ppl:0
     }
     #Oceania
-    IndonesiaTrps={
+    Indonesia={
         red:0,
         org:0,
         ylw:0,
@@ -521,7 +581,7 @@ if True:
         blu:0,
         ppl:0
     }
-    NewGuineaTrps={
+    NewGuinea={
         red:0,
         org:0,
         ylw:0,
@@ -529,7 +589,7 @@ if True:
         blu:0,
         ppl:0
     }
-    WesternAustraliaTrps={
+    WesternAustralia={
         red:0,
         org:0,
         ylw:0,
@@ -537,7 +597,7 @@ if True:
         blu:0,
         ppl:0
     }
-    EasternAustraliaTrps={
+    EasternAustralia={
         red:0,
         org:0,
         ylw:0,
@@ -546,7 +606,7 @@ if True:
         ppl:0
     }
     #South America
-    BrazilTrps={
+    Brazil={
         red:0,
         org:0,
         ylw:0,
@@ -554,7 +614,7 @@ if True:
         blu:0,
         ppl:0
     }
-    VenezuelaTrps={
+    Venezuela={
         red:0,
         org:0,
         ylw:0,
@@ -562,7 +622,7 @@ if True:
         blu:0,
         ppl:0
     }
-    PeruTrps={
+    Peru={
         red:0,
         org:0,
         ylw:0,
@@ -570,7 +630,7 @@ if True:
         blu:0,
         ppl:0
     }
-    ArgentinaTrps={
+    Argentina={
         red:0,
         org:0,
         ylw:0,
@@ -579,7 +639,7 @@ if True:
         ppl:0
     }
     #North America
-    CentralAmericaTrps={
+    CentralAmerica={
         red:0,
         org:0,
         ylw:0,
@@ -587,7 +647,7 @@ if True:
         blu:0,
         ppl:0
     }
-    EasternUnitedStatesTrps={
+    EasternUnitedStates={
         red:0,
         org:0,
         ylw:0,
@@ -595,7 +655,7 @@ if True:
         blu:0,
         ppl:0
     }
-    WesternUnitedStatesTrps={
+    WesternUnitedStates={
         red:0,
         org:0,
         ylw:0,
@@ -603,7 +663,7 @@ if True:
         blu:0,
         ppl:0
     }
-    EasternCanadaTrps={
+    EasternCanada={
         red:0,
         org:0,
         ylw:0,
@@ -611,7 +671,7 @@ if True:
         blu:0,
         ppl:0
     }
-    OntarioTrps={
+    Ontario={
         red:0,
         org:0,
         ylw:0,
@@ -619,7 +679,7 @@ if True:
         blu:0,
         ppl:0
     }
-    AlbertaTrps={
+    Alberta={
         red:0,
         org:0,
         ylw:0,
@@ -627,7 +687,7 @@ if True:
         blu:0,
         ppl:0
     }
-    NorthwestTerritoryTrps={
+    NorthwestTerritory={
         red:0,
         org:0,
         ylw:0,
@@ -635,7 +695,7 @@ if True:
         blu:0,
         ppl:0
     }
-    AlaskaTrps={
+    Alaska={
         red:0,
         org:0,
         ylw:0,
@@ -643,7 +703,7 @@ if True:
         blu:0,
         ppl:0
     }
-    GreenlandTrps={
+    Greenland={
         red:0,
         org:0,
         ylw:0,
