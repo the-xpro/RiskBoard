@@ -228,7 +228,7 @@ class China:
 
 #country troop counter
 if True:
-    SoutheastAsiaTrps={
+    SiamTrps={
         red:0,
         org:0,
         ylw:0,
