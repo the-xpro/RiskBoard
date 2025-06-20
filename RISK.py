@@ -193,40 +193,13 @@ class China:
         self.brdr=[
             Afghanistan,
             India,
-            Siam,
+            SouthEastAsia,
             Mongolia,
             Siberia,
             Ural
         ]
 
-class China:
-    def __init__(self):
-        self.trps={
-            red:0,
-            org:0,
-            ylw:0,
-            grn:0,
-            blu:0,
-            ppl:0
-        }
-        self.king={
-            red:False,
-            org:False,
-            ylw:False,
-            grn:False,
-            blu:False,
-            ppl:False
-        }
-        self.brdr=[
-            Afghanistan,
-            India,
-            Siam,
-            Mongolia,
-            Siberia,
-            Ural
-        ]
-
-class Siam:
+class SouthEastAsia:
     def __init__(self):
         self.trps={
             red:0,
@@ -295,7 +268,7 @@ class India:
             Afghanistan,
             China,
             MiddleEast,
-            Siam
+            SouthEastAsia
         ]
 
 class MiddleEast:
@@ -530,82 +503,251 @@ class GreatBritain:
             WesternEurope
         ]
 
-#country troop counter
+class NorthAfrica:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            CentralAfrica,
+            EastAfrica,
+            Egypt,
+            WesternEurope,
+            SouthernEurope,
+            Brazil
+        ]
+
+class Egypt:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EastAfrica,
+            NorthAfrica,
+            SouthernEurope,
+            MiddleEast
+        ]
+
+class EastAfrica:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            CentralAfrica,
+            Egypt,
+            Madagascar,
+            NorthAfrica,
+            SouthAfrica
+        ]
+
+class CentralAfrica:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EastAfrica,
+            NorthAfrica,
+            SouthAfrica
+        ]
+
+class SouthAfrica:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            CentralAfrica,
+            EastAfrica,
+            Madagascar
+        ]
+
+class Madagascar:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EastAfrica,
+            SouthAfrica
+        ]
+
+class Indonesia:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            SouthEastAsia,
+            NewGuinea,
+            WesternAustralia
+        ]
+
+class NewGuinea:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EasternAustralia,
+            Indonesia,
+            WesternAustralia
+        ]
+
+class WesternAustralia:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EasternAustralia,
+            Indonesia,
+            NewGuinea
+        ]
+
+class EasternAustralia:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            NewGuinea,
+            WesternAustralia
+        ]
+
 if True:
-    NorthAfrica={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Egypt={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EastAfrica={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    CentralAfrica={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    SouthAfrica={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    #Oceania
-    Indonesia={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    NewGuinea={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    WesternAustralia={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EasternAustralia={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    #South America
     Brazil={
         red:0,
         org:0,
