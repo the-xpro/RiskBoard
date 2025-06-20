@@ -20,6 +20,7 @@ def load(name:str):
         return json.loads(file.read())
 
 # classes
+# asia (id:3)
 class Kamchatka:
     def __init__(self):
         self.trps={
@@ -45,6 +46,7 @@ class Kamchatka:
             Japan,
             Mongolia
         ]
+        self.con=3
 
 class Yakutsk:
     def __init__(self):
@@ -69,6 +71,7 @@ class Yakutsk:
             Irkutsk,
             Siberia
         ]
+        self.con=3
 
 class Siberia:
     def __init__(self):
@@ -95,6 +98,7 @@ class Siberia:
             China,
             Ural
         ]
+        self.con=3
 
 class Ural:
     def __init__(self):
@@ -120,6 +124,7 @@ class Ural:
             Afghanistan,
             Russia
         ]
+        self.con=3
 
 class Irkutsk:
     def __init__(self):
@@ -145,6 +150,7 @@ class Irkutsk:
             Yakutsk,
             Siberia
         ]
+        self.con=3
 
 class Mongolia:
     def __init__(self):
@@ -171,6 +177,7 @@ class Mongolia:
             Siberia,
             Irkutsk
         ]
+        self.con=3
 
 class China:
     def __init__(self):
@@ -198,6 +205,7 @@ class China:
             Siberia,
             Ural
         ]
+        self.con=3
 
 class SouthEastAsia:
     def __init__(self):
@@ -222,6 +230,7 @@ class SouthEastAsia:
             India,
             Indonesia
         ]
+        self.con=3
 
 class Japan:
     def __init__(self):
@@ -245,6 +254,7 @@ class Japan:
             Kamchatka,
             Mongolia
         ]
+        self.con=3
 
 class India:
     def __init__(self):
@@ -270,6 +280,7 @@ class India:
             MiddleEast,
             SouthEastAsia
         ]
+        self.con=3
 
 class MiddleEast:
     def __init__(self):
@@ -297,6 +308,7 @@ class MiddleEast:
             SouthernEurope,
             Russia
         ]
+        self.con=3
 
 class Afghanistan:
     def __init__(self):
@@ -323,6 +335,9 @@ class Afghanistan:
             MiddleEast,
             Ural
         ]
+        self.con=3
+
+# europe (id:2)
 
 class Russia:
     def __init__(self):
@@ -350,6 +365,7 @@ class Russia:
             MiddleEast,
             Ural
         ]
+        self.con=2
 
 class Scandanavia:
     def __init__(self):
@@ -375,6 +391,7 @@ class Scandanavia:
             NorthernEurope,
             Russia
         ]
+        self.con=2
 
 class NorthernEurope:
     def __init__(self):
@@ -401,6 +418,7 @@ class NorthernEurope:
             WesternEurope,
             Russia
         ]
+        self.con=2
 
 class SouthernEurope:
     def __init__(self):
@@ -428,6 +446,7 @@ class SouthernEurope:
             NorthernEurope,
             WesternEurope
         ]
+        self.con=2
 
 class WesternEurope:
     def __init__(self):
@@ -453,6 +472,7 @@ class WesternEurope:
             SouthernEurope,
             NorthAfrica
         ]
+        self.con=2
 
 class Iceland:
     def __init__(self):
@@ -477,6 +497,7 @@ class Iceland:
             Scandanavia,
             Greenland
         ]
+        self.con=2
 
 class GreatBritain:
     def __init__(self):
@@ -502,6 +523,9 @@ class GreatBritain:
             NorthernEurope,
             WesternEurope
         ]
+        self.con=2
+
+# africa (id:5)
 
 class NorthAfrica:
     def __init__(self):
@@ -529,6 +553,7 @@ class NorthAfrica:
             SouthernEurope,
             Brazil
         ]
+        self.con=5
 
 class Egypt:
     def __init__(self):
@@ -554,6 +579,7 @@ class Egypt:
             SouthernEurope,
             MiddleEast
         ]
+        self.con=5
 
 class EastAfrica:
     def __init__(self):
@@ -580,6 +606,7 @@ class EastAfrica:
             NorthAfrica,
             SouthAfrica
         ]
+        self.con=5
 
 class CentralAfrica:
     def __init__(self):
@@ -604,6 +631,7 @@ class CentralAfrica:
             NorthAfrica,
             SouthAfrica
         ]
+        self.con=5
 
 class SouthAfrica:
     def __init__(self):
@@ -628,6 +656,7 @@ class SouthAfrica:
             EastAfrica,
             Madagascar
         ]
+        self.con=5
 
 class Madagascar:
     def __init__(self):
@@ -651,6 +680,9 @@ class Madagascar:
             EastAfrica,
             SouthAfrica
         ]
+        self.con=5
+
+# ociana (id:6)
 
 class Indonesia:
     def __init__(self):
@@ -675,6 +707,7 @@ class Indonesia:
             NewGuinea,
             WesternAustralia
         ]
+        self.con=6
 
 class NewGuinea:
     def __init__(self):
@@ -699,6 +732,7 @@ class NewGuinea:
             Indonesia,
             WesternAustralia
         ]
+        self.con=6
 
 class WesternAustralia:
     def __init__(self):
@@ -723,6 +757,7 @@ class WesternAustralia:
             Indonesia,
             NewGuinea
         ]
+        self.con=6
 
 class EasternAustralia:
     def __init__(self):
@@ -746,110 +781,339 @@ class EasternAustralia:
             NewGuinea,
             WesternAustralia
         ]
+        self.con=6
 
-if True:
-    Brazil={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Venezuela={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Peru={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Argentina={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    #North America
-    CentralAmerica={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EasternUnitedStates={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    WesternUnitedStates={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    EasternCanada={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Ontario={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Alberta={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    NorthwestTerritory={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Alaska={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
-    Greenland={
-        red:0,
-        org:0,
-        ylw:0,
-        grn:0,
-        blu:0,
-        ppl:0
-    }
+# south america (id:4)
+
+class Brazil:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Argentina,
+            Peru,
+            Venezuela,
+            NorthAfrica
+        ]
+        self.con=4
+
+class Venezuela:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Brazil,
+            Peru,
+            CentralAmerica
+        ]
+        self.con=4
+
+class Peru:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Argentina,
+            Brazil,
+            Venezuela
+        ]
+        self.con=4
+
+class Argentina:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Brazil,
+            Peru
+        ]
+        self.con=4
+
+# north america (id:1)
+
+class CentralAmerica:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Venezuela,
+            EasternUSA,
+            WesternUSA
+        ]
+        self.con=1
+
+class EasternUSA:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            WesternUSA,
+            CentralAmerica,
+            EasternCanada,
+            Ontario
+        ]
+        self.con=1
+
+class WesternUSA:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EasternUSA,
+            Alberta,
+            CentralAmerica,
+            Ontario
+        ]
+        self.con=1
+
+class EasternCanada:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            EasternUSA,
+            Greenland,
+            Ontario
+        ]
+        self.con=1
+
+class Ontario:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Alberta,
+            EasternUSA,
+            Greenland,
+            NorthwestTerritory,
+            EasternCanada,
+            WesternUSA
+        ]
+        self.con=1
+
+class Alberta:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Alaska,
+            NorthwestTerritory,
+            Ontario,
+            WesternUSA
+        ]
+        self.con=1
+
+class NorthwestTerritory:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Alaska,
+            Greenland,
+            Alberta,
+            Ontario
+        ]
+        self.con=1
+
+class Alaska:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            Alberta,
+            NorthwestTerritory
+        ]
+        self.con=1
+
+class Greenland:
+    def __init__(self):
+        self.trps={
+            red:0,
+            org:0,
+            ylw:0,
+            grn:0,
+            blu:0,
+            ppl:0
+        }
+        self.king={
+            red:False,
+            org:False,
+            ylw:False,
+            grn:False,
+            blu:False,
+            ppl:False
+        }
+        self.brdr=[
+            NorthwestTerritory,
+            Ontario,
+            EasternCanada
+        ]
+        self.con=1
