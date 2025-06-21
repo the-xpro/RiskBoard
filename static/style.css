@@ -1,0 +1,206 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background-color: #171717;
+}
+
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    padding: auto;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+.inline-flexwrap {
+    display: inline flex;
+    flex-wrap: wrap;
+}
+
+.inline-flex {
+    display: inline flex;
+    padding: auto;
+}
+
+.pad {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.normal {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 100px;
+    color: #000;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 125px);
+    grid-template-rows: repeat(7, 125px);
+}
+
+/* || typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+}
+
+option {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+p,
+input,
+li,
+dd,
+dt,
+label {
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* || header layout */
+
+nav,
+article,
+aside,
+footer {
+    background-color: #2e2e2e;
+    padding: 1%;
+}
+
+nav {
+    height: 50px;
+    background-color: #2e2e2e;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    padding: 1em;
+    display: inline;
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+}
+
+input {
+    font-size: 1.6rem;
+    height: 32px;
+}
+
+input[type="search"] {
+    flex: 3;
+}
+
+input {
+    flex: 1;
+    margin-left: 1rem;
+    background: #333;
+    border: 0;
+    color: whitesmoke;
+}
+
+/* || main layout */
+
+main {
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke
+}
+
+ul, dl, ol {
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif
+}
+
+article {
+    flex: 4;
+}
+
+aside {
+    flex: 1;
+    margin-left: 10px;
+    background-color: #2e2e2e;
+}
+
+aside li {
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-top: 10px;
+}

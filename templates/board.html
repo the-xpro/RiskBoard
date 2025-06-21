@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Risk</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+        <link rel="stylesheet" href={{ url_for('static', filename='style.css') }} /> 
+        <link rel="stylesheet" href=/static/style.css /> 
+    </head>
+    <body>
+        <header>
+            <h1>Risk</h1>
+        </header>
+        <nav>
+            <ol>
+                <li>Player: {{ args[3]["player"] }}</li>
+                <li>Territories: {{ args[2][args[3]["player"]] }}</li>
+            </ol>
+        </nav>
+        <main>
+            <form action="#" method="post" class="grid">
+                <strong class="circle" style="border: 5px solid gold; background-color:gold">Alaska</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold; line-height:normal"><br>Northwest<br>Territory</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold">Greenland</strong>
+                <br>
+                <p></p>
+                <br>
+                <p></p>
+                <br>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Yakutsk</strong>
+                <br>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold">Alberta</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold">Ontario</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold; line-height:normal"><br>East<br>Canada</strong>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue">Iceland</strong>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue; font-size: 1.6rem;">Scandanavia</strong>
+                <br>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Ural</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Siberia</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Irkutsk</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen; font-size:1.7rem">Kamchatka</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold; line-height:normal"><br>Western<br>USA</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold; line-height:normal"><br>Eastern<br>USA</strong>
+                <br>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue; line-height:normal"><br>Great<br>Britain</strong>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue; line-height:normal"><br>Northern<br>Europe</strong>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue">Russia</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen; font-size:1.6rem">Afghanistan</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">China</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Mongolia</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">Japan</strong>
+                <strong class="circle" style="border: 5px solid gold; background-color:gold; line-height:normal"><br>Central<br>America</strong>
+                <br>
+                <p></p>
+                <br>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue; line-height:normal"><br>Western<br>Europe</strong>
+                <strong class="circle" style="border: 5px solid dodgerblue; background-color:dodgerblue; line-height:normal"><br>Southern<br>Europe</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen; font-size:1.7rem">Middle East</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen">India</strong>
+                <strong class="circle" style="border: 5px solid limegreen; background-color:limegreen; line-height:26px; font-size:1.8rem"><br>Southeast<br>Asia</strong>
+                <br>
+                <strong class="circle" style="border: 5px solid peru; background-color:peru">Venezuela</strong>
+                <strong class="circle" style="border: 5px solid peru; background-color:peru">Brazil</strong>
+                <br>
+                <p></p>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon; line-height:normal"><br>North<br>Africa</strong>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon">Egypt</strong>
+                <br>
+                <p></p>
+                <strong class="circle" style="border: 5px solid plum; background-color:plum">Indonesia</strong>
+                <strong class="circle" style="border: 5px solid plum; background-color:plum; line-height:normal"><br>New<br>Guinea</strong>
+                <strong class="circle" style="border: 5px solid peru; background-color:peru">Peru</strong>
+                <strong class="circle" style="border: 5px solid peru; background-color:peru">Argentina</strong>
+                <br>
+                <p></p>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon; line-height:normal"><br>Central<br>Africa</strong>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon; font-size:1.8rem">East Africa</strong>
+                <br>
+                <p></p>
+                <strong class="circle" style="border: 5px solid plum; background-color:plum; line-height:normal"><br>Western<br>Australia</strong>
+                <strong class="circle" style="border: 5px solid plum; background-color:plum; line-height:normal"><br>Eastern<br>Australia</strong>
+                <br>
+                <p></p>
+                <br>
+                <p></p>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon; line-height:normal"><br>South<br>Africa</strong>
+                <strong class="circle" style="border: 5px solid lightsalmon; background-color:lightsalmon; font-size:1.6rem">Madagascar</strong>
+            </div>
+        </main>
+    </body>
+</html>

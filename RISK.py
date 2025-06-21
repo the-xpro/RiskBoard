@@ -1,13 +1,6 @@
 import flask as f
 r = f.request
 
-red=0
-org=0
-ylw=0
-grn=0
-blu=0
-ppl=0
-
 #saving
 import json
 
@@ -26,20 +19,20 @@ if "Classes".isalpha():
     class Kamchatka:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Alaska,
@@ -53,20 +46,20 @@ if "Classes".isalpha():
     class Yakutsk:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Kamchatka,
@@ -78,20 +71,20 @@ if "Classes".isalpha():
     class Siberia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Yakutsk,
@@ -105,20 +98,20 @@ if "Classes".isalpha():
     class Ural:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Siberia,
@@ -131,20 +124,20 @@ if "Classes".isalpha():
     class Irkutsk:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Kamchatka,
@@ -157,20 +150,20 @@ if "Classes".isalpha():
     class Mongolia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Kamchatka,
@@ -184,20 +177,20 @@ if "Classes".isalpha():
     class China:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Afghanistan,
@@ -212,20 +205,20 @@ if "Classes".isalpha():
     class SouthEastAsia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 China,
@@ -237,20 +230,20 @@ if "Classes".isalpha():
     class Japan:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Kamchatka,
@@ -261,20 +254,20 @@ if "Classes".isalpha():
     class India:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Afghanistan,
@@ -287,20 +280,20 @@ if "Classes".isalpha():
     class MiddleEast:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Afghanistan,
@@ -315,20 +308,20 @@ if "Classes".isalpha():
     class Afghanistan:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 China,
@@ -344,20 +337,20 @@ if "Classes".isalpha():
     class Russia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Afghanistan,
@@ -372,20 +365,20 @@ if "Classes".isalpha():
     class Scandanavia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 GreatBritain,
@@ -398,20 +391,20 @@ if "Classes".isalpha():
     class NorthernEurope:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 GreatBritain,
@@ -425,20 +418,20 @@ if "Classes".isalpha():
     class SouthernEurope:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Egypt,
@@ -453,20 +446,20 @@ if "Classes".isalpha():
     class WesternEurope:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 GreatBritain,
@@ -479,20 +472,20 @@ if "Classes".isalpha():
     class Iceland:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 GreatBritain,
@@ -504,20 +497,20 @@ if "Classes".isalpha():
     class GreatBritain:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Iceland,
@@ -532,20 +525,20 @@ if "Classes".isalpha():
     class NorthAfrica:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 CentralAfrica,
@@ -560,20 +553,20 @@ if "Classes".isalpha():
     class Egypt:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EastAfrica,
@@ -586,20 +579,20 @@ if "Classes".isalpha():
     class EastAfrica:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 CentralAfrica,
@@ -613,20 +606,20 @@ if "Classes".isalpha():
     class CentralAfrica:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EastAfrica,
@@ -638,20 +631,20 @@ if "Classes".isalpha():
     class SouthAfrica:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 CentralAfrica,
@@ -663,20 +656,20 @@ if "Classes".isalpha():
     class Madagascar:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EastAfrica,
@@ -684,25 +677,25 @@ if "Classes".isalpha():
             ]
             self.con=5
 
-    # ociana (id:6)
+    # oceania (id:6)
 
     class Indonesia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 SouthEastAsia,
@@ -714,20 +707,20 @@ if "Classes".isalpha():
     class NewGuinea:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EasternAustralia,
@@ -739,20 +732,20 @@ if "Classes".isalpha():
     class WesternAustralia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EasternAustralia,
@@ -764,20 +757,20 @@ if "Classes".isalpha():
     class EasternAustralia:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 NewGuinea,
@@ -790,20 +783,20 @@ if "Classes".isalpha():
     class Brazil:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Argentina,
@@ -816,20 +809,20 @@ if "Classes".isalpha():
     class Venezuela:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Brazil,
@@ -841,20 +834,20 @@ if "Classes".isalpha():
     class Peru:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Argentina,
@@ -866,20 +859,20 @@ if "Classes".isalpha():
     class Argentina:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Brazil,
@@ -892,20 +885,20 @@ if "Classes".isalpha():
     class CentralAmerica:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Venezuela,
@@ -917,20 +910,20 @@ if "Classes".isalpha():
     class EasternUSA:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 WesternUSA,
@@ -943,20 +936,20 @@ if "Classes".isalpha():
     class WesternUSA:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EasternUSA,
@@ -969,20 +962,20 @@ if "Classes".isalpha():
     class EasternCanada:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 EasternUSA,
@@ -994,20 +987,20 @@ if "Classes".isalpha():
     class Ontario:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Alberta,
@@ -1022,20 +1015,20 @@ if "Classes".isalpha():
     class Alberta:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Alaska,
@@ -1048,20 +1041,20 @@ if "Classes".isalpha():
     class NorthwestTerritory:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Alaska,
@@ -1074,20 +1067,20 @@ if "Classes".isalpha():
     class Alaska:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 Alberta,
@@ -1098,20 +1091,20 @@ if "Classes".isalpha():
     class Greenland:
         def __init__(self):
             self.trps={
-                red:0,
-                org:0,
-                ylw:0,
-                grn:0,
-                blu:0,
-                ppl:0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king={
-                red:False,
-                org:False,
-                ylw:False,
-                grn:False,
-                blu:False,
-                ppl:False
+                "red":False,
+                "org":False,
+                "ylw":False,
+                "grn":False,
+                "blu":False,
+                "ppl":False
             }
             self.brdr=[
                 NorthwestTerritory,
@@ -1119,10 +1112,70 @@ if "Classes".isalpha():
                 EasternCanada
             ]
             self.con=1
+
+countries = [
+    Kamchatka,
+    Yakutsk,
+    Siberia,
+    Ural,
+    Irkutsk,
+    Mongolia,
+    China,
+    SouthEastAsia,
+    Japan,
+    India,
+    MiddleEast,
+    Afghanistan,
+    Russia,
+    Scandanavia,
+    NorthernEurope,
+    SouthernEurope,
+    WesternEurope,
+    Iceland,
+    GreatBritain,
+    NorthAfrica,
+    Egypt,
+    EastAfrica,
+    CentralAfrica,
+    SouthAfrica,
+    Madagascar,
+    Indonesia,
+    NewGuinea,
+    WesternAustralia,
+    EasternAustralia,
+    Brazil,
+    Venezuela,
+    Peru,
+    Argentina,
+    CentralAmerica,
+    EasternUSA,
+    WesternUSA,
+    EasternCanada,
+    Ontario,
+    Alberta,
+    NorthwestTerritory,
+    Alaska,
+    Greenland
+]
+
+kingnum = {
+    "red":0,
+    "org":0,
+    "ylw":0,
+    "grn":0,
+    "blu":0,
+    "ppl":0
+}
+
 # end of the file
 
 app = f.Flask(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 def game():
-    return f.render_template("hello.html", args=r.args)
+    args=[
+    countries,
+    kingnum,
+    r.args
+    ]
+    return f.render_template("board.html", args=args)
