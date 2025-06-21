@@ -13,11 +13,8 @@ def load(name:str):
     with open(name, "r") as file:
         return json.loads(file.read())
 
-if "Classes".isalpha():
-    # classes
-    # asia (id:3)
-    class Kamchatka:
-        def __init__(self):
+class Cowinit:
+        def __init__(self, brdr:list, con:int):
             self.trps={
                 "red":0,
                 "org":0,
@@ -26,22 +23,14 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
-            self.brdr=[
-                Alaska,
-                Yakutsk,
-                Irkutsk,
-                Japan,
-                Mongolia
-            ]
-            self.con=3
+            self.king=""
+            self.brdr=brdr
+            self.con=con
+
+
+if "Classes".isalpha():
+    # classes
+    # asia (id:3)
 
     class Yakutsk:
         def __init__(self):
@@ -53,14 +42,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Kamchatka,
                 Irkutsk,
@@ -78,14 +60,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Yakutsk,
                 Irkutsk,
@@ -105,14 +80,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Siberia,
                 China,
@@ -131,14 +99,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Kamchatka,
                 Mongolia,
@@ -157,14 +118,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Kamchatka,
                 Japan,
@@ -184,14 +138,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Afghanistan,
                 India,
@@ -212,14 +159,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 China,
                 India,
@@ -237,14 +177,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Kamchatka,
                 Mongolia
@@ -261,14 +194,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Afghanistan,
                 China,
@@ -287,14 +213,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Afghanistan,
                 EastAfrica,
@@ -315,14 +234,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 China,
                 India,
@@ -344,14 +256,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Afghanistan,
                 NorthernEurope,
@@ -372,14 +277,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 GreatBritain,
                 Iceland,
@@ -398,14 +296,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 GreatBritain,
                 Scandanavia,
@@ -425,14 +316,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Egypt,
                 NorthAfrica,
@@ -453,14 +337,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 GreatBritain,
                 NorthernEurope,
@@ -479,14 +356,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 GreatBritain,
                 Scandanavia,
@@ -504,14 +374,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Iceland,
                 Scandanavia,
@@ -532,14 +395,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 CentralAfrica,
                 EastAfrica,
@@ -560,14 +416,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EastAfrica,
                 NorthAfrica,
@@ -586,14 +435,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 CentralAfrica,
                 Egypt,
@@ -613,14 +455,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EastAfrica,
                 NorthAfrica,
@@ -638,14 +473,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 CentralAfrica,
                 EastAfrica,
@@ -663,14 +491,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EastAfrica,
                 SouthAfrica
@@ -689,14 +510,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 SouthEastAsia,
                 NewGuinea,
@@ -714,14 +528,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EasternAustralia,
                 Indonesia,
@@ -739,14 +546,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EasternAustralia,
                 Indonesia,
@@ -764,14 +564,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 NewGuinea,
                 WesternAustralia
@@ -790,14 +583,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Argentina,
                 Peru,
@@ -816,14 +602,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Brazil,
                 Peru,
@@ -841,14 +620,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Argentina,
                 Brazil,
@@ -866,14 +638,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Brazil,
                 Peru
@@ -892,14 +657,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Venezuela,
                 EasternUSA,
@@ -917,14 +675,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 WesternUSA,
                 CentralAmerica,
@@ -943,14 +694,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EasternUSA,
                 Alberta,
@@ -969,14 +713,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 EasternUSA,
                 Greenland,
@@ -994,14 +731,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Alberta,
                 EasternUSA,
@@ -1022,14 +752,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Alaska,
                 NorthwestTerritory,
@@ -1048,14 +771,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Alaska,
                 Greenland,
@@ -1074,14 +790,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 Alberta,
                 NorthwestTerritory
@@ -1098,14 +807,7 @@ if "Classes".isalpha():
                 "blu":0,
                 "ppl":0
             }
-            self.king={
-                "red":False,
-                "org":False,
-                "ylw":False,
-                "grn":False,
-                "blu":False,
-                "ppl":False
-            }
+            self.king=""
             self.brdr=[
                 NorthwestTerritory,
                 Ontario,
@@ -1113,50 +815,10 @@ if "Classes".isalpha():
             ]
             self.con=1
 
-countries = [
-    Kamchatka,
-    Yakutsk,
-    Siberia,
-    Ural,
-    Irkutsk,
-    Mongolia,
-    China,
-    SouthEastAsia,
-    Japan,
-    India,
-    MiddleEast,
-    Afghanistan,
-    Russia,
-    Scandanavia,
-    NorthernEurope,
-    SouthernEurope,
-    WesternEurope,
-    Iceland,
-    GreatBritain,
-    NorthAfrica,
-    Egypt,
-    EastAfrica,
-    CentralAfrica,
-    SouthAfrica,
-    Madagascar,
-    Indonesia,
-    NewGuinea,
-    WesternAustralia,
-    EasternAustralia,
-    Brazil,
-    Venezuela,
-    Peru,
-    Argentina,
-    CentralAmerica,
-    EasternUSA,
-    WesternUSA,
-    EasternCanada,
-    Ontario,
-    Alberta,
-    NorthwestTerritory,
-    Alaska,
-    Greenland
-]
+    class cows:
+        Kamchatka = Country([Alaska,Yakutsk,Irkutsk,Japan,Mongolia],3)
+        Yakutsk = Yakutsk
+
 
 kingnum = {
     "red":0,
@@ -1173,6 +835,11 @@ app = f.Flask(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 def game():
+    for cow in cows:
+        for key, value in cow.trps.items():
+            if value != 0:
+                countries[countries.index(country)].king = key
+                kingnum[key] += 1
     args=[
     countries,
     kingnum,
