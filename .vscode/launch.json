@@ -10,6 +10,13 @@
             "request": "launch",
             "module": "flask",
             "args": ["--app", "${file}", "run"],
+        },
+        {
+            "name": "Python Debugger: Flask Forwarding",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "flask",
+            "args": ["--app", "${file}", "run","--host=0.0.0.0"],
         }
     ]
 }

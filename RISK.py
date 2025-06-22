@@ -20,106 +20,62 @@ class Cown:
             }
             self.king=""
             self.brdr=brdr
-            con
+            self.con=con
 
 
 
-class Cows:
+class Cowss:
     def __init__(self):
-        global Kamchatka
-        Kamchatka = Cown([Alaska,Yakutsk,Irkutsk,Japan,Mongolia],3)
-        Yakutsk = Cown([Kamchatka,Irkutsk,Siberia],3)
-        Siberia = Cown([Yakutsk,Irkutsk,Mongolia,China,Ural],3)
-        Ural = Cown([Siberia,China,Afghanistan,Russia],3)
-        Irkutsk = Cown([Kamchatka,Mongolia,Yakutsk,Siberia],3)
-        Mongolia = Cown([Kamchatka,Japan,China,Siberia,Irkutsk],3)
-        China = Cown([Afghanistan,India,SouthEastAsia,Mongolia,Siberia,Ural],3)
-        SouthEastAsia = Cown([China,India,Indonesia],3)
-        Japan = Cown([Kamchatka,Mongolia],3)
-        India = Cown([Afghanistan,China,MiddleEast,SouthEastAsia],3)
-        MiddleEast = Cown([Afghanistan,EastAfrica,India,Egypt,SouthernEurope,Russia],3)
-        Afghanistan = Cown([China,India,Russia,MiddleEast,Ural],3)
+        self.Kamchatka = Cown([self.Alaska,self.Yakutsk,self.Irkutsk,self.Japan,self.Mongolia],3)
+        self.Yakutsk = Cown([self.Kamchatka,self.Irkutsk,self.Siberia],3)
+        self.Siberia = Cown([self.Yakutsk,self.Irkutsk,self.Mongolia,self.China,self.Ural],3)
+        self.Ural = Cown([self.Siberia,self.China,self.Afghanistan,self.Russia],3)
+        self.Irkutsk = Cown([self.Kamchatka,self.Mongolia,self.Yakutsk,self.Siberia],3)
+        self.Mongolia = Cown([self.Kamchatka,self.Japan,self.China,self.Siberia,self.Irkutsk],3)
+        self.China = Cown([self.Afghanistan,self.India,self.SouthEastAsia,self.Mongolia,self.Siberia,self.Ural],3)
+        self.SouthEastAsia = Cown([self.China,self.India,self.Indonesia],3)
+        self.Japan = Cown([self.Kamchatka,self.Mongolia],3)
+        self.India = Cown([self.Afghanistan,self.China,self.MiddleEast,self.SouthEastAsia],3)
+        self.MiddleEast = Cown([self.Afghanistan,self.EastAfrica,self.India,self.Egypt,self.SouthernEurope,self.Russia],3)
+        self.Afghanistan = Cown([self.China,self.India,self.Russia,self.MiddleEast,self.Ural],3)
             # europe (id:2))
-        Russia = Cown([Afghanistan,NorthernEurope,Scandanavia,SouthernEurope,MiddleEast,Ural],2)
-        Scandanavia = Cown([GreatBritain,Iceland,NorthernEurope,Russia],2)
-        NorthernEurope = Cown([GreatBritain,Scandanavia,SouthernEurope,WesternEurope,Russia],2)
-        SouthernEurope = Cown([Egypt,NorthAfrica,MiddleEast,Russia,NorthernEurope,WesternEurope],2)
-        WesternEurope = Cown([GreatBritain,NorthernEurope,SouthernEurope,NorthAfrica],2)
-        Iceland = Cown([GreatBritain,Scandanavia,Greenland],2)
-        GreatBritain = Cown([Iceland,Scandanavia,NorthernEurope,WesternEurope],2)
+        self.Russia = Cown([self.Afghanistan,self.NorthernEurope,self.Scandanavia,self.SouthernEurope,self.MiddleEast,self.Ural],2)
+        self.Scandanavia = Cown([self.GreatBritain,self.Iceland,self.NorthernEurope,self.Russia],2)
+        self.NorthernEurope = Cown([self.GreatBritain,self.Scandanavia,self.SouthernEurope,self.WesternEurope,self.Russia],2)
+        self.SouthernEurope = Cown([self.Egypt,self.NorthAfrica,self.MiddleEast,self.Russia,self.NorthernEurope,self.WesternEurope],2)
+        self.WesternEurope = Cown([self.GreatBritain,self.NorthernEurope,self.SouthernEurope,self.NorthAfrica],2)
+        self.Iceland = Cown([self.GreatBritain,self.Scandanavia,self.Greenland],2)
+        self.GreatBritain = Cown([self.Iceland,self.Scandanavia,self.NorthernEurope,self.WesternEurope],2)
             # africa (id:5))
-        NorthAfrica = Cown([CentralAfrica,EastAfrica,Egypt,WesternEurope,SouthernEurope,Brazil],5)
-        Egypt = Cown([EastAfrica,NorthAfrica,SouthernEurope,MiddleEast],5)
-        EastAfrica = Cown([CentralAfrica,Egypt,Madagascar,NorthAfrica,SouthAfrica],5)
-        CentralAfrica = Cown([EastAfrica,NorthAfrica,SouthAfrica],5)
-        SouthAfrica = Cown([CentralAfrica,EastAfrica,Madagascar],5)
-        Madagascar = Cown([EastAfrica,SouthAfrica],5)
+        self.NorthAfrica = Cown([self.CentralAfrica,self.EastAfrica,self.Egypt,self.WesternEurope,self.SouthernEurope,self.Brazil],5)
+        self.Egypt = Cown([self.EastAfrica,self.NorthAfrica,self.SouthernEurope,self.MiddleEast],5)
+        self.EastAfrica = Cown([self.CentralAfrica,self.Egypt,self.Madagascar,self.NorthAfrica,self.SouthAfrica],5)
+        self.CentralAfrica = Cown([self.EastAfrica,self.NorthAfrica,self.SouthAfrica],5)
+        self.SouthAfrica = Cown([self.CentralAfrica,self.EastAfrica,self.Madagascar],5)
+        self.Madagascar = Cown([self.EastAfrica,self.SouthAfrica],5)
             # oceania (id:6))
-        Indonesia = Cown([SouthEastAsia,NewGuinea,WesternAustralia],6)
-        NewGuinea = Cown([EasternAustralia,Indonesia,WesternAustralia],6)
-        WesternAustralia = Cown([EasternAustralia,Indonesia,NewGuinea],6)
-        EasternAustralia = Cown([NewGuinea,WesternAustralia],6)
+        self.Indonesia = Cown([self.SouthEastAsia,self.NewGuinea,self.WesternAustralia],6)
+        self.NewGuinea = Cown([self.EasternAustralia,self.Indonesia,self.WesternAustralia],6)
+        self.WesternAustralia = Cown([self.EasternAustralia,self.Indonesia,self.NewGuinea],6)
+        self.EasternAustralia = Cown([self.NewGuinea,self.WesternAustralia],6)
             # south america (id:4))
-        Brazil = Cown([Argentina,Peru,Venezuela,NorthAfrica],4)
-        Venezuela = Cown([Brazil,Peru,CentralAmerica],4)
-        Peru = Cown([Argentina,Brazil,Venezuela],4)
-        Argentina = Cown([Brazil,Peru],4)
+        self.Brazil = Cown([self.Argentina,self.Peru,self.Venezuela,self.NorthAfrica],4)
+        self.Venezuela = Cown([self.Brazil,self.Peru,self.CentralAmerica],4)
+        self.Peru = Cown([self.Argentina,self.Brazil,self.Venezuela],4)
+        self.Argentina = Cown([self.Brazil,self.Peru],4)
             # north america (id:1)
-        CentralAmerica = Cown([Venezuela,EasternUSA,WesternUSA]1)
-        EasternUSA = Cown([WesternUSA,CentralAmerica,EasternCanada,Ontario],1)
-        Alberta = Cown([Alaska,NorthwestTerritory,Ontario,WesternUSA],1)
-        WesternUSA = Cown([EasternUSA,Alberta,CentralAmerica,Ontario],1)
-        EasternCanada = Cown([EasternUSA,Greenland,Ontario],1)
-        Ontario = Cown([Alberta,EasternUSA,Greenland,NorthwestTerritory,EasternCanada,WesternUSA],1)
+        self.CentralAmerica = Cown([self.Venezuela,self.EasternUSA,self.WesternUSA],1)
+        self.EasternUSA = Cown([self.WesternUSA,self.CentralAmerica,self.EasternCanada,self.Ontario],1)
+        self.Alberta = Cown([self.Alaska,self.NorthwestTerritory,self.Ontario,self.WesternUSA],1)
+        self.WesternUSA = Cown([self.EasternUSA,self.Alberta,self.CentralAmerica,self.Ontario],1)
+        self.EasternCanada = Cown([self.EasternUSA,self.Greenland,self.Ontario],1)
+        self.Ontario = Cown([self.Alberta,self.EasternUSA,self.Greenland,self.NorthwestTerritory,self.EasternCanada,self.WesternUSA],1)
+        self.NorthwestTerritory = Cown([self.Alberta,self.Ontario,self.Greenland,self.Alaska])
+        self.Greenland = Cown([self.NorthwestTerritory,self.Ontario,self.EasternCanada],1)
+        self.Alaska = Cown([self.Alberta,self.NorthwestTerritory],1)
 
-
-Cowss = Cows
-
-Cowis = [
-    Cows.Kamchatka,
-    Cows.Yakutsk,
-    Siberia,
-    Ural,
-    Irkutsk,
-    Mongolia,
-    China,
-    SouthEastAsia,
-    Japan,
-    India,
-    MiddleEast,
-    Afghanistan,
-    Russia,
-    Scandanavia,
-    NorthernEurope,
-    SouthernEurope,
-    WesternEurope,
-    Iceland,
-    GreatBritain,
-    NorthAfrica,
-    Egypt,
-    EastAfrica,
-    CentralAfrica,
-    SouthAfrica,
-    Madagascar,
-    Indonesia,
-    NewGuinea,
-    WesternAustralia,
-    EasternAustralia,
-    Brazil,
-    Venezuela,
-    Peru,
-    Argentina,
-    CentralAmerica,
-    EasternUSA,
-    WesternUSA,
-    EasternCanada,
-    Ontario,
-    Alberta,
-    NorthwestTerritory,
-    Alaska,
-    Greenland
-]
-
+Cows = Cowss()
+     
 kingnum = {
     "red":0,
     "org":0,
@@ -128,20 +84,21 @@ kingnum = {
     "blu":0,
     "ppl":0
 }
-
 # end of the file
 
 app = f.Flask(__name__)
 
 @app.route("/", methods=["POST", "GET"])
 def game():
-    for Cow in Cowis:
-        for key, value in Cow.trps.items():
-            if value != 0:
-                Cowis[Cowis.index(Cow)].king = key
-                kingnum[key] += 1
+    for Cow in Cows.__dir__():
+        if not Cow.startswith("_"):
+            for key, value in Cow.trps.items():
+                if value != 0:
+                    Cows.__getattribute__(Cow).king = key
+                    kingnum[key] += 1
+                
     args=[
-    Cowis,
+    Cows,
     kingnum,
     r.args
     ]
