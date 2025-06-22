@@ -16,11 +16,18 @@ def load(name:str):
 class Cown:
         def __init__(self, brdr:list, con:int):
             self.trps={
-                "red":0,"org":0,"ylw":0,"grn":0,"blu":0,"ppl":0
+                "red":0,
+                "org":0,
+                "ylw":0,
+                "grn":0,
+                "blu":0,
+                "ppl":0
             }
             self.king=""
             self.brdr=brdr
             self.con=con
+        def onclick():
+            pass
 
 
 
@@ -91,12 +98,17 @@ app = f.Flask(__name__)
 @app.route("/", methods=["POST", "GET"])
 def game():
     for Cow in Cows.__dir__():
-        if not Cow.startswith("_"):
-            for key, value in Cow.trps.items():
+        if not Cows.__getattribute__(Cow).startswith("_"):
+            prevking = Cows.__getattribute__(Cow).king
+            for key, value in Cows.__getattribute__(Cow).trps.items():
                 if value != 0:
                     Cows.__getattribute__(Cow).king = key
                     kingnum[key] += 1
-                
+                    kingnum[prevking] -= 1
+    
+    if r.method == "POST":
+        pass
+
     args=[
     Cows,
     kingnum,
