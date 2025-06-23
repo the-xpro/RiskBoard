@@ -46,14 +46,16 @@ body {
 }
 
 .circle {
-    display: inline-block;
+    display: inline;
     border-radius: 100px;
     color: #000;
     width: 100px;
     height: 100px;
     line-height: 100px;
     text-align: center;
-    font-family: 'Open Sans', sans-serif'
+    font-family: 'Open Sans', 'sans-serif';
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .grid {
